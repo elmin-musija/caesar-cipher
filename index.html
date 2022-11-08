@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<title>Lev3_10_projekt_js-vertiefung_encoder-decoder_caesar-cipher</title>
+	</head>
+	<body>
+		<header></header>
+		<main>
+			<form onsubmit="return false">
+				<h1>Caesar cipher</h1>
+				<div class="radio-button">
+					<input type="radio" name="radio" id="radio-encrypt" required />
+					<label for="radio-encrypt">Verschlüsseln</label>
+					<input type="radio" name="radio" id="radio-decrypt" />
+					<label for="radio-decrypt">Entschlüsseln</label>
+				</div>
+				<input
+					type="text"
+					name="input-text"
+					id="input-text"
+					placeholder="Bitte den Text eingeben:"
+					required
+				/>
+				<input
+					type="number"
+					name="input-key"
+					id="input-key"
+					placeholder="Bitte den Schlüssel ( 1 - 28 ) eingeben:"
+					min="1"
+					max="28"
+					required
+				/>
+				<input type="submit" value="Senden" />
+				<p class="result"></p>
+			</form>
+		</main>
+		<footer></footer>
+		<script src="./assets/js/main.js"></script>
+	</body>
+</html>
